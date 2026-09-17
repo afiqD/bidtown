@@ -1,0 +1,24 @@
+{
+  "name": "bidtown",
+  "version": "1.0.0",
+  "description": "An isometric ad-tech town that runs a real campaign day of programmatic auctions",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/model.test.mjs",
+    "smoke": "node scripts/smoke.mjs http://localhost:8001/ --steps 320",
+    "shots": "node scripts/shots.mjs http://localhost:8001/ shot",
+    "serve": "python3 -m http.server 8001"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "playwright": "^1.63.0"
+  },
+  "private": true
+}
