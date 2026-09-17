@@ -610,6 +610,8 @@ input[type="range"]::-moz-range-thumb {
 @media (max-width: 900px) {
   .brand-text p { display: none; }
   .zoomer { top: auto; bottom: calc(var(--dock-h) + 130px); transform: none; }
+  /* an open bottom sheet owns the lower screen; the zoomer must get out of it */
+  body.sheet-open .zoomer { display: none; }
 
   .inspector {
     top: auto;
